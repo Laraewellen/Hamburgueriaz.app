@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:text="Faça seu pedido"
+            style="@style/EstiloTexto"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#3F51B5" />
+
+        <EditText
+            android:id="@+id/editTextNome"
+            android:hint="Nome do cliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:text="Escolha os adicionais:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkboxBacon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bacon (+R$2)" />
+
+        <CheckBox
+            android:id="@+id/checkboxQueijo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Queijo (+R$2)" />
+
+        <CheckBox
+            android:id="@+id/checkboxOnion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Onion Rings (+R$3)" />
+
+        <TextView
+            android:text="Quantidade"
+            style="@style/EstiloTexto"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/botaoMenos"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="−"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textoQuantidade"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="18sp"
+                android:layout_marginHorizontal="16dp"
+                android:background="@android:color/white" />
+
+            <Button
+                android:id="@+id/botaoMais"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="+"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textoTotal"
+            style="@style/EstiloTexto"
+            android:text="Preço Total: R$ 0"
+            android:textSize="16sp"
+            android:textColor="#388E3C"
+            android:layout_marginTop="24dp" />
+
+        <Button
+            android:id="@+id/botaoEnviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enviar Pedido"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#3F51B5"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:padding="12dp" />
+
+        <TextView
+            android:id="@+id/textoResumo"
+            style="@style/EstiloTexto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resumo do Pedido"
+            android:textSize="14sp"
+            android:textColor="#555"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:elevation="2dp"
+            android:layout_marginTop="24dp" />
+    </LinearLayout>
+</ScrollView>
