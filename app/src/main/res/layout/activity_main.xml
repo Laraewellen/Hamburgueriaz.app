@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F5F5F5">
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -11,12 +13,22 @@
         android:padding="24dp"
         android:gravity="center_horizontal">
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:adjustViewBounds="true"
+            android:background="#009C27B0"
+            android:contentDescription="Logo HamburgueriaZ"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo_hamburgueriaz" />
+
         <TextView
-            android:text="Faça seu pedido"
+            android:text="FAÇA SEU PEDIDO"
             style="@style/EstiloTexto"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:textColor="#3F51B5" />
+            android:textColor="#3F51B5"
+            android:layout_marginBottom="16dp" />
 
         <EditText
             android:id="@+id/editTextNome"
@@ -61,6 +73,7 @@
             android:layout_marginTop="24dp"
             android:layout_marginBottom="8dp" />
 
+        <!-- BOTÕES DE QUANTIDADE COM AJUSTES -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -69,15 +82,18 @@
 
             <Button
                 android:id="@+id/botaoMenos"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:text="−"
-                android:textSize="18sp" />
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:text="-"
+                android:textSize="24sp"
+                android:padding="8dp"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#673AB7" />
 
             <TextView
                 android:id="@+id/textoQuantidade"
                 android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_height="56dp"
                 android:gravity="center"
                 android:text="0"
                 android:textSize="18sp"
@@ -86,10 +102,13 @@
 
             <Button
                 android:id="@+id/botaoMais"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
                 android:text="+"
-                android:textSize="18sp" />
+                android:textSize="24sp"
+                android:padding="8dp"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#673AB7" />
         </LinearLayout>
 
         <TextView
